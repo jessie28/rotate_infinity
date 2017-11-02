@@ -1,0 +1,56 @@
+.ugcItemContainer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+}
+.ugcItems{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.imgItem{
+    width: 335px;
+    height: 335px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+.imgItem .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: -10px -10px 20px rgba(0,0,0,.5) inset;
+}
+.imgItem>img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes moves {
+    0%{
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+        -webkit-transform: translate(-100%,0);
+    }
+}
+@-webkit-keyframes moves {
+    0%{
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100%,0);
+        -webkit-transform: translate(-100%,0);
+    }
+}
+.animate_moves{
+    -webkit-animation: moves 5s 0s linear infinite normal;
+    animation: moves 5s 0s linear infinite normal;
+}
